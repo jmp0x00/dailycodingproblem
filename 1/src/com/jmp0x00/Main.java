@@ -1,13 +1,11 @@
 package com.jmp0x00;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class Main {
 
     private static boolean has_two_numbers_with_sum(int[] numbers, int k) {
-        List<Integer> diff = new ArrayList<>();
+        Set<Integer> diff = new HashSet<>();
 
         for (int n : numbers) {
             if (diff.contains(n))
